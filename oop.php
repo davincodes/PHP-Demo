@@ -18,31 +18,20 @@
     // 1. Public
     // 2. Private - access it if there are setters and getters.
 
-    //instantitiate
-    class student { //create a class
+    //sample of inheritance.
+    class Animal { //create a class
         //Properties
-        private $name;
-        private $gender;
-
-
-        function __construct($name, $gender){ //every you entantiate it willl be triggered.
-            this->name = $name;
-            this->gender = $gender;
-            //ancd more ....
-        }
-    }   //classes are nothing if you dont initialize it on an object.
-        //Methods
-        function set_name($name){
-            this->name = $name;
-        }
-        function get_name(){
-            return $this->name;
-        }
-
-    $john = new Student("John Doe","Male",19); //every time there is a new it will trigger construct.
-
-    // $john->name = "John Cena";
+        private $species;
+        private $lifespan;
+        private $limbs;
+    }
+    class Dog extends Animal{
+        private $breed;
+        private $age;
+    }
     
-    echo $john -> get_name();
+$shitzhu = new Dog();
+$shitzhu -> limbs = 4;
 
+echo $shitzhu->limbs; //resulted to 4 becuase it inherits animal.
 ?>
