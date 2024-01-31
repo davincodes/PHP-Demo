@@ -19,7 +19,7 @@
     // 2. Private - access it if there are setters and getters.
 
     //sample of inheritance.
-    class Animal { //create a class
+    abstract class Animal { //abstract class - purpose is to be inherited.
         //Properties
         private $species;
         private $lifespan;
